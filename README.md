@@ -2,7 +2,7 @@
 <i>
   Official code repository for the manuscript 
   <b>"GloMER: Towards Robust Multimodal Emotion Recognition via Gated Fusion and Contrastive Learning"</b>, 
-  submitted to 
+  accepted to 
   <a href="https://conferences.sigappfr.org/medes2025/">The 17th International Conference on Management of Digital Ecosystems</a>.
 </i>
 
