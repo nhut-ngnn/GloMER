@@ -51,8 +51,9 @@
 ## Citation
 If you use this code or part of it, please cite the following papers:
 ```
-Update soon
+Nhut Minh Nguyen, Duc Tai Phan, and Duc Ngoc Minh Dang, “GloMER: Towards Robust Multimodal Emotion Recognition via Gated Fusion and Contrastive Learning”, The 17th International Conference on Management of Digital EcoSystems (MEDES 2025), Ho Chi Minh City, Vietnam, Nov 24-26, 2025.
 ```
+
 ## Contact
 For any information, please contact the main author:
 
