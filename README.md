@@ -22,7 +22,7 @@
 </div>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Last%20updated%20on-06.09.2025-brightgreen?style=for-the-badge">
+<img src="https://img.shields.io/badge/Last%20updated%20on-28.09.2025-brightgreen?style=for-the-badge">
 <img src="https://img.shields.io/badge/Written%20by-Nguyen%20Minh%20Nhut-pink?style=for-the-badge"> 
 </p>
 
@@ -45,8 +45,38 @@
 
 
 ## Install
-> **Source code coming soon!**  
-> Stay tuned—follow or star this repo for updates.
+### Clone this repository
+```
+git clone https://github.com/nhut-ngnn/GloMER.git
+```
+
+### Create Conda Enviroment and Install Requirement
+Navigate to the project directory and create a Conda environment:
+```
+cd GloMER
+conda create --name GloMER python=3.8
+conda activate GloMER
+```
+### Install Dependencies
+```
+pip install -r requirements.txt
+```
+### Dataset 
+
+GloMER is evaluated on two widely-used multimodal emotion recognition datasets:
+
+#### IEMOCAP (Interactive Emotional Dyadic Motion Capture)
+- **Modality**: Audio + Text  
+- **Classes**: `angry`, `happy`, `sad`, `neutral` (4 classes)  
+- **Sessions**: 5  
+- **Official Website**: [https://sail.usc.edu/iemocap/](https://sail.usc.edu/iemocap/)  
+- **Note**: We use **Wav2Vec2.0** for audio and **BERT** for text feature extraction.
+
+#### ESD (Emotional Speech Dataset)
+- **Modality**: Audio + Text  
+- **Languages**: English, Mandarin, and more  
+- **Classes**: `neutral`, `angry`, `happy`, `sad`, `surprise` (5 classes)  
+- **Official GitHub**: [https://github.com/HLTSingapore/ESD](https://github.com/HLTSingapore/ESD)  
 
 ## Citation
 If you use this code or part of it, please cite the following papers:

@@ -23,3 +23,4 @@ torch_geometric
 sounddevice
 wandb
 seaborn
+thop

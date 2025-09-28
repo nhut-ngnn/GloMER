@@ -19,5 +19,4 @@ class GatedMultimodalUnit(nn.Module):
         z = self.sigmoid(self.gate_proj(gate_input))
 
         fused = (1-z) * h_t + z * h_a
-        #fused = z * h_t + (1-z) * h_a
         return fused

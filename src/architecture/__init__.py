@@ -1,1 +1,0 @@
-from .GloMER import CrossModalContrastiveModel

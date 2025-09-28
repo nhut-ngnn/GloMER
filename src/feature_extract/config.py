@@ -4,7 +4,7 @@ from .model_encode import BERTEmbeddingModel, AudioEmbeddingModel
 
 PKL_DIR = "IEMOCAP_preprocessed"
 OUTPUT_DIR = "features_output"
-TEXT_CKPT_PATH = "Fine_tuning/ESD/models/best_bert_embeddings.pt"
+TEXT_CKPT_PATH = "fine_tuning/ESD/models/best_bert_embeddings.pt"
 AUDIO_CKPT_PATH = "fine_tuning/ESD/models/best_wav2vec_embeddings.pt"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
