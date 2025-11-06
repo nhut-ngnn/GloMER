@@ -7,7 +7,7 @@ set -e
 # Make sure to run preprocess.sh and feature_extract.sh before this script
 echo "=== Training GloMER ==="
 python trainer/train.py \
-    --data_dir "data/processed" \
+    --data_dir "data/feature_output" \
     --dataset IEMOCAP \
     --num_classes 4 \
     --epochs 100 \

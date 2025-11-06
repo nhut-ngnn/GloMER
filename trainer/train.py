@@ -14,8 +14,8 @@ warnings.filterwarnings("ignore")
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.utils.utils import set_seed, train_and_evaluate
-from architecture.GloMER import CrossModalContrastiveModel
-from architecture.Losses import NTXentLoss, DiversityContrastiveLoss, ConsistencyContrastiveLoss
+from src.architecture.GloMER import GloMER
+from src.architecture.Losses import NTXentLoss, DiversityContrastiveLoss, ConsistencyContrastiveLoss
 from torch.utils.data import TensorDataset
 
 def load_data(pkl_path):
@@ -81,7 +81,7 @@ def main():
 
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-        model = CrossModalContrastiveModel(
+        model = GloMER(
             text_input_dim=768,
             audio_input_dim=768,
             fusion_dim=512,

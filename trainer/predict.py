@@ -24,7 +24,7 @@ warnings.filterwarnings("ignore")
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.utils.utils import set_seed
-from architecture.GloMER import CrossModalContrastiveModel
+from src.architecture.GloMER import GloMER
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -126,7 +126,7 @@ def main():
     test_data = load_data(test_pkl).to(device)
 
     print("Loading model...")
-    model = CrossModalContrastiveModel(
+    model = GloMER(
         text_input_dim=768,
         audio_input_dim=768,
         fusion_dim=512,

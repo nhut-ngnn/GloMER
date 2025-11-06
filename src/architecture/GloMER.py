@@ -6,7 +6,7 @@ from .Cross_model import CrossModalEncoders
 from .Classifier import MLPClassifier
 from .GatedMultimodalUnit import GatedMultimodalUnit
 
-class CrossModalContrastiveModel(nn.Module):
+class GloMER(nn.Module):
     def __init__(
         self,
         text_input_dim=768,
